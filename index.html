@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grade Calculator</title>
+
+    <!-- Link to a CSS file -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Link to Bootstrap -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <!--  Calculator Title -->
+    <div class="card p-4 container calc">
+        <h3 
+            class="text-center mb-3 text-primary">
+            Grade Average Calculator
+        </h3>
+        <!-- Forms -->
+        <div class="mb-3">
+            <label 
+                for="grade1" 
+                class="form-label">
+                Grade 1
+            </label>
+            <input 
+                type="number" 
+                class="form-control" 
+                id="grade1" 
+                min="0" 
+                max="100">
+        </div>
+        <div class="mb-3">
+            <label 
+                for="grade2" 
+                class="form-label">
+                Grade 2
+            </label>
+            <input 
+                type="number" 
+                class="form-control" 
+                id="grade2" 
+                min="0" 
+                max="100">
+        </div>
+        <div class="mb-3">
+            <label 
+                for="grade3" 
+                class="form-label">
+                Grade 3
+            </label>
+            <input 
+                type="number" 
+                class="form-control" 
+                id="grade3" 
+                min="0" 
+                max="100">
+        </div>
+        <!--  Calculator Button -->
+        <button 
+            id="calcBtn" 
+            class="calcBtn" 
+            title="Calculate Grade" 
+            onclick="calculateAverage()">
+            Calculate
+        </button>
+        <div 
+            id="output" 
+            class="text-center mt-4 fw-bold">
+        </div>
+  </div>
+    
+    <!--  JavaScript Link -->
+    <script src="index.js"></script>
+
+    
+  </body>
+</html>
